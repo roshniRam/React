@@ -10,6 +10,7 @@ import { FadeTransform, Fade, Stagger} from 'react-animation-components';
 const required = (val) => val && val.length;
 const maxLength = (len) => (val) => !(val) || (val.length <= len);
 const minLength = (len) => (val) => val && (val.length >= len);
+
 class CommentForm extends Component {
     constructor(props) {
         super(props);
@@ -108,7 +109,7 @@ function RenderDish({dish}) {
                     tranformProps={{
                         exitTransform: 'scale(0.5) translateY(-50%)'
                     }}>
-                    <Card className="col-12 col-md-5 m-1">
+                    <Card>
                         <CardImg top src={baseUrl + dish.image} alt={dish.name} />
                         <CardBody>
                             <CardTitle><strong>{dish.name}</strong></CardTitle>
