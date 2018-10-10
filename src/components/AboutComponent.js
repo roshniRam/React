@@ -3,7 +3,7 @@ import { Breadcrumb, BreadcrumbItem, Card, CardBody, CardHeader, Media } from 'r
 import { Link } from 'react-router-dom';
 import { Loading } from './LoadingComponent';
 import { baseUrl } from '../shared/baseURL';
-import { FadeTransform, Fade, Stagger } from 'react-animation-components';
+import { Fade, Stagger } from 'react-animation-components';
 
 function RenderLeader({leader}){
 
@@ -32,12 +32,12 @@ function RenderLeader({leader}){
 function About(props) {
 
 
-    const leaders = props.leaders.leaders.map((leader) => {
-        return (
-            // <p>Leader {leader.name}</p>
-            <RenderLeader leader={leader} />
-        );
-    });
+    // const leaders = props.leaders.leaders.map((leader) => {
+    //     return (
+    //         // <p>Leader {leader.name}</p>
+    //         <RenderLeader leader={leader} />
+    //     );
+    // });
 
     if (props.leaders.isLoading) {
         return(
