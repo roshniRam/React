@@ -9,7 +9,17 @@ A demo Website of Ristorante con fusion developed during Coursera's Front-End We
     git clone --recursive https://github.com/roshniRam/React.git
     ` 
     
-  
+### Dependencies:
+1. Open the command promt at your project location.
+  2. Then run:
+   `
+    npm install
+    ` 
+    
+  3. To set up json-server:
+  `npm install json-server -g`
+ 
+
 ### For Development:
   1. Open the project in your favourite IDE
   2. Install the dependencies.
